@@ -1,0 +1,95 @@
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+  <div class="container">
+    <div class="bread-inner">
+      <div class="row">
+        <div class="col-12">
+          <h2>Choissez votre Filire.</h2>
+
+          <h3 style="color: white ;margin-top: 10px">Saisissez vos informations puis triez les choix de votre filière par glisser-déposer.</h3>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumbs -->
+
+<!-- Section: Design Block -->
+<section class="text-center">
+  <!-- Background image -->
+  <div class="p-5 bg-image">
+
+  </div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="
+        margin-top: -100px;
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-5">Choissez votre filire</h2>
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="prenom">Prenom</label>
+                  <input type="text" id="prenom" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="nom">Nom</label>
+                  <input type="text" id="nom" class="form-control" />
+
+                </div>
+              </div>
+            </div>
+
+
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="email">Email address</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+
+
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="nAppoge">Numéro d’appogée</label>
+              <input type="text" id="nAppoge" class="form-control" />
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+            <div cdkDropListGroup>
+              <div class="example-container">
+                <label class="form-label">Trier vos Choix</label>
+                <div
+                  cdkDropList
+                  [cdkDropListData]="todo"
+                  (cdkDropListDropped)="drop($event)">
+                  @for (item of todo; track item) {
+                    <div class="form-control" style="margin-top: 6px" cdkDrag>{{item}}</div>
+                  }
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+            <!-- Submit button -->
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+              Confimer
+            </button>
+
+            <!-- Register buttons -->
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
