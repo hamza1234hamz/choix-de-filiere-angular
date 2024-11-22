@@ -7,8 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="assets/img/favicon.png">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvt7u_pGD_7h573l6950fGM9KJsQHRhr0"></script>
+  <style>
+    #map {
+      height: 600px; /* Hauteur de la carte */
+      width: 100%;   /* Largeur de la carte */
+    }
+  </style>
+  <script>
+    function initMap() {
+      // Coordonnées de l'ENSAK
+      const ensakLocation = { lat: 34.2675455, lng: -6.5871079 };
+
+      // Création de la carte
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15, // Niveau de zoom
+        center: ensakLocation,
+      });
+
+      // Ajout d'un marqueur
+      const marker = new google.maps.Marker({
+        position: ensakLocation,
+        map: map,
+        title: "ENSA Kenitra",
+      });
+    }
+
+    // Initialisation de la carte
+    window.onload = initMap;
+  </script>
 
   <!-- Google Fonts -->
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 

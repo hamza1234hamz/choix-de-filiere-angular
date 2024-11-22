@@ -14,6 +14,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ChoixFilireComponent } from './pages/choix-filire/choix-filire.component';
 import {CdkDrag, CdkDropList, CdkDropListGroup} from "@angular/cdk/drag-drop";
 import { FilierListComponentComponent } from './pages/filier-list-component/filier-list-component.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FilierListComponentComponent } from './pages/filier-list-component/fili
     NgOptimizedImage,
     CdkDropList,
     CdkDrag,
-    CdkDropListGroup
+    CdkDropListGroup,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
     provideClientHydration()

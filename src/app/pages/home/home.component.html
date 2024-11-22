@@ -2,15 +2,15 @@
 <section class="slider">
 
     <!-- Start Single Slider -->
-    <div class="single-slider" style="background-image:url('assets/img/slider2.jpg')">
+    <div class="single-slider" style="background-image:url('assets/img/tets.png');height: 650px">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
             <div class="text">
-              <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+              <h1 class="mb-4">Ecole Nationale des Sciences Appliquées <span>Kénitra</span></h1>
+              <h2>المدرسة الوطنية للعلوم التطبيقية <span>بالقنيطرة</span></h2>
               <div class="button">
-                <a [routerLink]="['/choix-filire']"class="btn">Choisissez votre filière</a>
+                <a [routerLink]="['/choix-filire']" class="btn">Choisissez votre filière</a>
                 <a href="#blog" class="btn primary">Apprendre encore plus</a>
 
               </div>
@@ -35,13 +35,12 @@
           <div class="single-schedule first">
             <div class="inner">
               <div class="icon">
-                <i class="fa fa-ambulance"></i>
+                <i class="icofont-presentation"></i>
               </div>
               <div class="single-content">
-                <span>Lorem Amet</span>
-                <h4>Emergency Cases</h4>
-                <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-                <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                <h4>Présentation</h4>
+                <p>L’Ecole Nationale des Sciences Appliquées de Kénitra (ENSAK) a été créée en 2008 ...</p>
+                <a href="https://ensa.uit.ac.ma/ensa/presentation/">VOIR PLUS<i class="fa fa-long-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -51,13 +50,12 @@
           <div class="single-schedule middle">
             <div class="inner">
               <div class="icon">
-                <i class="icofont-prescription"></i>
+                <i class="icofont-building-alt"></i>
               </div>
               <div class="single-content">
-                <span>Fusce Porttitor</span>
-                <h4>Doctors Timetable</h4>
-                <p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-                <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                <h4>Infrastructures</h4>
+                <p>l’ENSAK dispose de locaux complets et équipés de tout ce dont les étudiants ont besoin.</p>
+                <a href="https://ensa.uit.ac.ma/ensa/infrastructures/">VOIR PLUS<i class="fa fa-long-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -67,17 +65,16 @@
           <div class="single-schedule last">
             <div class="inner">
               <div class="icon">
-                <i class="icofont-ui-clock"></i>
+                <i class="icofont-building-alt"></i>
               </div>
               <div class="single-content">
-                <span>Donec luctus</span>
-                <h4>Opening Hours</h4>
+                <h4>Départements</h4>
                 <ul class="time-sidual">
-                  <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-                  <li class="day">Saturday <span>9.00-18.30</span></li>
-                  <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                  <li class="day">Département Informatique...</li>
+                  <li class="day">Département Génie Electrique...</li>
+                  <li class="day">Enseignements Généraux.</li>
                 </ul>
-                <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                <a href="https://ensa.uit.ac.ma/ensa/departements/">VOIR PLUS<i class="fa fa-long-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -95,7 +92,6 @@
       <div class="col-lg-12">
         <div class="section-title">
           <h2>Comment vous devez choisir votre filire ? </h2>
-          <img src="assets/img/section-img.png" alt="#">
           <p>Voici les étapes nécessaires à suivre pour choisir votre filière.</p>
         </div>
       </div>
@@ -105,10 +101,14 @@
         <!-- Start Single features -->
         <div class="single-features">
           <div class="signle-icon">
-            <i class="icofont icofont-ambulance-cross"></i>
+            <i class="icofont-read-book"></i>
           </div>
           <h3>Etape 1</h3>
-          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+          <p></p>
+          <p>
+            <a [routerLink]="['/Filire-list']">Lisez attentivement les descriptions des filières pour en savoir plus et décider de l'ordre le plus approprié pour vous.</a>
+          </p>
+
         </div>
         <!-- End Single features -->
       </div>
@@ -116,10 +116,12 @@
         <!-- Start Single features -->
         <div class="single-features">
           <div class="signle-icon">
-            <i class="icofont icofont-medical-sign-alt"></i>
+            <i class="icofont-check-circled"></i>
           </div>
           <h3>Etape 2</h3>
-          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+          <p>
+            <a [routerLink]="['/choix-filire']">Remplissez le formulaire de choix de filière en spécifiant vos informations et l'ordre des filières puis confirmer votre ordre.</a>
+          </p>
         </div>
         <!-- End Single features -->
       </div>
@@ -127,10 +129,13 @@
         <!-- Start Single features -->
         <div class="single-features last">
           <div class="signle-icon">
-            <i class="icofont icofont-stethoscope"></i>
+            <i class="icofont-list"></i>
           </div>
           <h3>Etape 3</h3>
-          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+          <p>
+            Affichage des résultats de chaque filière à la date choisie par l'administration.
+          </p>
+
         </div>
         <!-- End Single features -->
       </div>
@@ -146,10 +151,10 @@
       <div class="col-lg-3 col-md-6 col-12">
         <!-- Start Single Fun -->
         <div class="single-fun">
-          <i class="icofont icofont-home"></i>
+          <i class="icofont-users-alt-2"></i>
           <div class="content">
-            <span class="counter">3468</span>
-            <p>Hospital Rooms</p>
+            <span class="counter">60</span>
+            <p>Professeur</p>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -157,10 +162,10 @@
       <div class="col-lg-3 col-md-6 col-12">
         <!-- Start Single Fun -->
         <div class="single-fun">
-          <i class="icofont icofont-user-alt-3"></i>
+          <i class="icofont-user-suited"></i>
           <div class="content">
-            <span class="counter">557</span>
-            <p>Specialist Doctors</p>
+            <span class="counter">28</span>
+            <p>Administratifs</p>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -168,10 +173,10 @@
       <div class="col-lg-3 col-md-6 col-12">
         <!-- Start Single Fun -->
         <div class="single-fun">
-          <i class="icofont-simple-smile"></i>
+          <i class="icofont-school-bag"></i>
           <div class="content">
-            <span class="counter">4379</span>
-            <p>Happy Patients</p>
+            <span class="counter">5</span>
+            <p>Filiere</p>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -179,10 +184,10 @@
       <div class="col-lg-3 col-md-6 col-12">
         <!-- Start Single Fun -->
         <div class="single-fun">
-          <i class="icofont icofont-table"></i>
+          <i class="icofont-student-alt"></i>
           <div class="content">
-            <span class="counter">32</span>
-            <p>Years of Experience</p>
+            <span class="counter">1697</span>
+            <p>Etudiant</p>
           </div>
         </div>
         <!-- End Single Fun -->
@@ -199,54 +204,71 @@
       <div class="col-lg-12">
         <div class="section-title">
           <h2>Voir les details de chaque filier</h2>
-          <img src="assets/img/section-img.png" alt="#">
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          <p>l’ENSAK vise à préparer des ingénieurs hautement qualifiés et polyvalents, capables de répondre aux défis technologiques et industriels actuels.</p>
+          <a [routerLink]="['/Filire-list']" class="btn mt-2" style="color: white">Voir toutes les Filières</a>
+
         </div>
       </div>
     </div>
     <div class="row" id="details">
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-6 col-12">
         <!-- Single Blog -->
         <div class="single-news">
           <div class="news-head">
-            <img src="assets/img/blog1.jpg" alt="#">
+            <img src="assets/img/bigdata.png" alt="#">
           </div>
           <div class="news-body">
             <div class="news-content">
               <div class="date">22 Aug, 2020</div>
-              <h2><a [routerLink]="['/filiere-details']">Filière 1</a></h2>
+              <h2><a [routerLink]="['/filiere-details']">Big data</a></h2>
               <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
             </div>
           </div>
         </div>
         <!-- End Single Blog -->
       </div>
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-6 col-12">
         <!-- Single Blog -->
         <div class="single-news">
           <div class="news-head">
-            <img src="assets/img/blog2.jpg" alt="#">
+            <img src="assets/img/bigdata.png" alt="#">
           </div>
           <div class="news-body">
             <div class="news-content">
               <div class="date">15 Jul, 2020</div>
-              <h2><a [routerLink]="['/filiere-details']">Filière 2</a></h2>
+              <h2><a [routerLink]="['/filiere-details']">Big data</a></h2>
               <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
             </div>
           </div>
         </div>
         <!-- End Single Blog -->
       </div>
-      <div class="col-lg-4 col-md-6 col-12">
+      <div class="col-lg-3 col-md-6 col-12">
         <!-- Single Blog -->
         <div class="single-news">
           <div class="news-head">
-            <img src="assets/img/blog3.jpg" alt="#">
+            <img src="assets/img/bigdata.png" alt="#">
           </div>
           <div class="news-body">
             <div class="news-content">
               <div class="date">05 Jan, 2020</div>
-              <h2><a [routerLink]="['/filiere-details']">Filière 3</a></h2>
+              <h2><a [routerLink]="['/filiere-details']">Big data</a></h2>
+              <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Blog -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <!-- Single Blog -->
+        <div class="single-news">
+          <div class="news-head">
+            <img src="assets/img/bigdata.png" alt="#">
+          </div>
+          <div class="news-body">
+            <div class="news-content">
+              <div class="date">05 Jan, 2020</div>
+              <h2><a [routerLink]="['/filiere-details']">Big data</a></h2>
               <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
             </div>
           </div>
@@ -259,14 +281,13 @@
 <!-- End Blog Area -->
 
 <!-- Start Appointment -->
-<section class="appointment">
+<section class="appointment" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="section-title">
+        <div class="section-title m-0">
           <h2>Contactez nous</h2>
-          <img src="assets/img/section-img.png" alt="#">
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          <p>Contactez-nous pour plus d'informations sur les filières disponibles à l'ENSAK.</p>
         </div>
       </div>
     </div>
@@ -279,10 +300,8 @@
             <div class="col-lg-6">
               <div class="contact-us-left">
                 <!--Start Google-map -->
-                <div id="myMap">
+                <div id="map"></div>
 
-
-                </div>
                 <!--/End Google-map -->
               </div>
             </div>
@@ -338,8 +357,10 @@
               <div class="single-info">
                 <i class="icofont icofont-ui-call"></i>
                 <div class="content">
-                  <h3>+(000) 1234 56789</h3>
-                  <p>info.company.com</p>
+                  <h3>(+212) 5 30 21 45 79</h3>
+                  <p>
+                    <a href="mailto:ensa.kenitra@uit.ac.ma">ensa.kenitra&#64;uit.ac.ma</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -349,8 +370,8 @@
               <div class="single-info">
                 <i class="icofont-google-map"></i>
                 <div class="content">
-                  <h3>2 Fir e Brigade Road</h3>
-                  <p>Chittagonj, Lakshmipur</p>
+                  <h3>BP 241 Av. de L’Université,</h3>
+                  <p>Kénitra 14000</p>
                 </div>
               </div>
             </div>
@@ -360,8 +381,8 @@
               <div class="single-info">
                 <i class="icofont icofont-wall-clock"></i>
                 <div class="content">
-                  <h3>Mon - Sat: 8am - 5pm</h3>
-                  <p>Sunday Closed</p>
+                  <h3>Lundi – Vendredi: 9am - 4pm</h3>
+                  <p>Dimanche - Fermé</p>
                 </div>
               </div>
             </div>

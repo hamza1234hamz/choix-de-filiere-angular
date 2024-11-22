@@ -19,7 +19,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // Importation du module de routage avec les routes configurées
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    }),
+  ],
   exports: [RouterModule] // Exportation pour permettre son utilisation dans le module principal
 })
 export class AppRoutingModule{}
