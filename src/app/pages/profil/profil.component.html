@@ -1,0 +1,139 @@
+<!-- Breadcrumbs -->
+<div class="breadcrumbs overlay">
+  <div class="container">
+    <div class="bread-inner">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mb-4">Ecole Nationale des Sciences Appliquées</h2>
+          <h2>المدرسة الوطنية للعلوم التطبيقية</h2>
+          <ul class="bread-list">
+            <li><a [routerLink]="['']">Home</a></li>
+            <li><i class="icofont-simple-right"></i></li>
+            <li class="active">Choissez votre filiere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Breadcrumbs -->
+<section>
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" class="mt-4">
+    <mat-tab label="Mon Profile">
+      <div class="col-lg-12 mt-5">
+        <div class="section-title">
+          <h2>Mon profile</h2>
+          <p> Cet espace vous permet de confirmer vos informations et de changer votre mot de passe pour des raisons de sécurité.</p>
+        </div>
+      </div>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-4">
+                <div class="card-body text-center">
+
+                  <img src="assets/img/Avatar.png" alt="avatar"
+                       class="rounded-circle img-fluid" style="width: 130px;">
+                  <h5 class="my-3">HAMZA EL GOURCHI</h5>
+                  <p class="text-muted mb-1">Numero appoge : 20000690</p>
+
+                  <div class="d-flex justify-content-center mb-2">
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" (click)="openDialog()">Editer votre profile</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-8">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Nom et prénom</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">HAMZA EL GORUCHI</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">exampleexample.com</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Téléphone</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">(+212) 234-5678</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Adresse</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">Maroc , kenitra</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Filière</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">null</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Suivi de Vos choix de Filière">
+      <div class="col-lg-12 mt-5">
+        <div class="section-title">
+          <h2>Suivi de Vos choix de Filière</h2>
+          <p> Cet espace vous permet de suivre l’état de traitement de vos choix de Filière.</p>
+        </div>
+      </div>
+      <mat-stepper linear #stepper class="row d-flex justify-content-center">
+        <mat-step>
+          <ng-template matStepLabel>Votre Choix (en Ordre)</ng-template>
+          <mat-list role="list">
+            <mat-list-item role="listitem" class="text-center">Filière 1</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem" class="text-center">Filière 2</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem" class="text-center">Filière 3</mat-list-item>
+          </mat-list>
+          <div class="d-flex justify-content-center">
+            <a [routerLink]="['/choix-filire']" class="btn btn-primary text-white">
+              Modifier votre Order de choix de Filière
+            </a>
+          </div>
+
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Traitement...</ng-template>
+          <h2>encore ...</h2>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Affichage de resultas</ng-template>
+          <h2>encore ....</h2>
+        </mat-step>
+      </mat-stepper>
+
+    </mat-tab>
+  </mat-tab-group>
+</section>
+

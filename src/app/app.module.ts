@@ -16,6 +16,17 @@ import {CdkDrag, CdkDropList, CdkDropListGroup} from "@angular/cdk/drag-drop";
 import { FilierListComponentComponent } from './pages/filier-list-component/filier-list-component.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from '@angular/material/button';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { ProfilComponent } from './pages/profil/profil.component';
+import { EditProfilComponent } from './components/edit-profil/edit-profil.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatFormField, MatLabel, MatSuffix} from '@angular/material/form-field';
+import {MatIcon} from '@angular/material/icon';
+import {MatStep, MatStepLabel, MatStepper, MatStepperPrevious} from '@angular/material/stepper';
+import {MatList, MatListItem} from '@angular/material/list';
+import {MatDivider} from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +39,10 @@ import {MatButtonModule} from '@angular/material/button';
     LoginComponent,
     RegisterComponent,
     ChoixFilireComponent,
-    FilierListComponentComponent
+    FilierListComponentComponent,
+    ForgotPasswordComponent,
+    ProfilComponent,
+    EditProfilComponent
   ],
   imports: [
     BrowserModule,
@@ -38,10 +52,23 @@ import {MatButtonModule} from '@angular/material/button';
     CdkDrag,
     CdkDropListGroup,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule,
+    MatFormField,
+    MatIcon,
+    MatLabel,
+    MatSuffix,
+    MatStepper,
+    MatStep,
+    MatStepperPrevious,
+    MatStepLabel,
+    MatList,
+    MatListItem,
+    MatDivider,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
